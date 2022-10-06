@@ -1,10 +1,23 @@
+/* Root */
+
+:root {
+
+  --white: #ffffff;
+  --black: #000000;
+  --darkcyan: #3C8067;
+  --cream: #F2EBE3;
+  --darkblue: #1C232B;
+  --darkgrayishblue: #6C7289;
+  --mediumlightgrey: #707176;
+}
+
 /* TAG SECTION  */
 
 body {
-  background-color: #f3ebe4;
+  background-color: var(--cream);
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #666666;
+  color: var(--mediumlightgrey);
 }
 
 /* CARD CONTAINER SECTION */
@@ -12,7 +25,7 @@ body {
 h1 {
   font-family: 'Fraunces', serif;
   font-weight: bold;
-  color: #333333;
+  color: var(--black);
 }
 
 h2 {
@@ -22,13 +35,9 @@ h2 {
   font-size: 12px;
 }
 
-.card-container {
-
-}
-
 /* FOOTER SECTION */
 
 .attribution {
   font-size: 11px; text-align: center;
-  color: #6D6F78;
+  color: var(-mediumlightgrey);
 }
