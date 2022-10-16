@@ -11,13 +11,21 @@
   --mediumlightgrey: #707176;
 }
 
+/* Universal selector */
+ *, a {
+   color: var(--black);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12px;
+   font-weight: 500;
+   margin: 0;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
 /* TAG SECTION  */
 
 body {
   background-color: var(--cream);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: var(--mediumlightgrey);
 }
 
 /* CARD CONTAINER SECTION */
@@ -33,6 +41,36 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 12px;
+}
+
+/* CARD SECTION */
+
+.card-container {
+  display: grid;
+  background-color: var(--white);
+  border-radius: 10px;
+  /* mobile view: 2 rows, 1 fraction each */
+  grid-template-rows: repeat(2, 1fr);
+  width: 344px;
+  height: 600px;
+  margin: 30px 15px;
+
+}
+
+/* IMAGE CONTENT */
+.image-section {
+  height: 239px;
+  /* as the design add the border radius to the image container */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0px;
+  /* as the design add the background image to the container */
+  /* /around the same path level so .. but different level . */
+  background-image: url("../images/image-product-mobile.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* FOOTER SECTION */
