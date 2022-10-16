@@ -30,19 +30,6 @@ body {
 
 /* CARD CONTAINER SECTION */
 
-h1 {
-  font-family: 'Fraunces', serif;
-  font-weight: bold;
-  color: var(--black);
-}
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 12px;
-}
-
 /* CARD SECTION */
 
 .card-container {
@@ -66,6 +53,7 @@ h2 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 0px;
   /* as the design add the background image to the container */
+  /* ensure the image is fixed to the container instead of on top */
   /* around the same path level so .. but different level . */
   background-image: url("../images/image-product-mobile.jpg");
   background-position: top center;
@@ -73,9 +61,158 @@ h2 {
   background-size: cover;
 }
 
+/* CONTENT SECTION */
+.content-section {
+  margin: 20px;
+
+}
+
+/* CONTENT: TOP CONTENT */
+
+.top-content h2 {
+  color: var(--mediumlightgrey);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  /* size of font will be proportionate to the screen size */
+  font-size: 1.35em;
+  margin-bottom: 20px;
+}
+
+.top-content h1 {
+  color: var(--darkblue);
+  font-size: 2.5em;
+  font-weight: 800;
+  font-family: 'Fraunces', serif;
+  line-height: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* CONTENT: PARAGRAPH CONTENT */
+
+.paragraph-content p {
+  color: var(--darkgrayishblue);
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+
+/* CONTENT: PRICE CONTENT */
+
+.price-content {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  align-items: center;
+  /* justify content of grid at the start of the grid */
+  justify-content: start;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.current-price p {
+  font-family: 'Fraunces', serif;
+  color: var(--darkcyan);
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+.strikethrough-price p {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--darkgrayishblue);
+  text-decoration: line-through;
+}
+
+/* CTA SECTION */
+button {
+  align-items: center;
+  background-color: var(--darkcyan);
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  margin-top: 16px;
+  /* make sure that the content is fully centered */
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.button-pd {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button-img {
+  width: 17px;
+  height: 18px;
+}
+
+.button-text {
+  color: var(--white);
+  min-width: 100px;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
 /* FOOTER SECTION */
 
 .attribution {
   font-size: 11px; text-align: center;
   color: var(-mediumlightgrey);
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+  /* media screen describing the desktop */
+  /* assuming can switch start working on desktop before mobile */
+
+  .card-container {
+    grid-template-rows: 0;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    height: 450px;
+    /* center the card */
+    /* even this can be used with grid */
+    margin: 150px auto auto;
+  }
+
+
+  .image-section {
+    height: 450px;
+    width: 300px;
+    /* as the design add the border radius to the image container */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    /* as the design add the background image to the container */
+    /* ensure the image is fixed to the container instead of on top */
+    /* around the same path level so .. but different level . */
+    background-image: url("../images/image-product-desktop.jpg");
+  }
+
+  .content-section {
+    margin: 40px 30px;
+    max-width: 250px;
+
+  }
+
+
+  .paragraph-content p {
+    margin-right: 40px;
+  }
+
+  button {
+    width: 240px;
+    margin-top: 20px;
+    /* push content to the center */
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+
 }
