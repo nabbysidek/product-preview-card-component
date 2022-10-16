@@ -29,12 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](.design/card-component-solution.jpg)
+![](C:\Users\User\Documents\GitHub\product-preview-card-component-main\design\card-component-solution.png)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -109,4 +105,4 @@ Things I'd like to focus on moving forward from this project/challenge:
 
 ## Acknowledgments
 
-I'd like to thank CoderCoder (https://www.youtube.com/c/TheCoderCoder) and Web Dev Simplified (https://www.youtube.com/c/WebDevSimplified) on Youtube for the swift and easy to understand explanation on CSS grid. I'd also like to thank Miss Natasha (https://medium.com/@nknuranathunga) for giving me inspiration and idea to solve the solution as well. 
+I'd like to thank CoderCoder (https://www.youtube.com/c/TheCoderCoder) and Web Dev Simplified (https://www.youtube.com/c/WebDevSimplified) on Youtube for the swift and easy to understand explanation on CSS grid. I'd also like to thank Miss Natasha (https://medium.com/@nknuranathunga) for giving me inspiration and idea to solve the solution as well.
