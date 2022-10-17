@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](C:\Users\User\Documents\GitHub\product-preview-card-component-main\design\card-component-solution.png)
+![](../design/card-component-solution.png)
 
 
 ## My process
